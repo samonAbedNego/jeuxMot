@@ -1,0 +1,158 @@
+body{
+    margin-top:50px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(blue, darkblue);
+    display: flex;
+    justify-content: center;
+    
+}
+.content{
+    display:none;
+}
+.entete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -19px;
+     
+}
+.timer{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+}
+.play {
+    width: 150px;
+    margin-top: 200px;
+    height: 50px;
+    background-color: orange;
+    font-size: 25px;
+    bottom: -50px;
+    left: -5px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    animation: play 2s linear infinite;
+    cursor: pointer;
+}
+.play:hover{
+    background-color: white;
+} 
+@keyframes play{
+    50%{
+        transform: scale(1.1);
+    }
+}
+
+.infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid rgb(43, 5, 93);
+    font-size: 18px;
+    border-radius: 18px;
+}
+.content.start{
+    display: block;
+}
+
+.lettersPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 550px;
+    height: 80px;
+    background-color: aliceblue;
+    border: 1px solid red;
+    border-radius: 18px;
+}
+.letters.close{
+    display:none;
+}
+.letter{
+display: none;
+}
+.letter.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid rgb(9, 8, 8);
+    margin: 12px;
+    border-radius: 18px;
+}
+.coverPlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -208px;
+    width: 550px;
+    height: 80px;
+    background-color: aliceblue;
+    border: 1px solid red;
+    border-radius: 18px;
+    z-index: -1;
+}
+.letterPropose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -125px;
+    width: 550px;
+    height: 80px;
+    background-color: aliceblue;
+    border: 1px solid red;
+    border-radius: 18px;
+}
+.letters{
+    display:none;
+}
+.letters.shows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid rgb(43, 5, 93);
+    margin: 12px;
+    font-size: 18px;
+    border-radius: 18px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -100px;
+    background-color: aliceblue;
+    border-radius: 18px;
+    font-size: 22px;
+}
+.infos{
+    margin-left: 65px;
+    width: auto;
+    border: none;
+    padding: 12px;
+}
